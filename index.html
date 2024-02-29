@@ -1,94 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-       <title>Document</title>
-       <link rel="stylesheet" href="sty.css">
-       
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Main Css-->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-       <div class="user">
-       <img src="photo.jpg">
-       <h5 class="nm">Zabi-Ur-Rehman </h5>
-       <p class="jb">Student</p>
-       </div>
-       <nav class="nv">
-          <ul>
-             <li><a href="#Details">Details</a></li>
-             <li><a href="#Education">Education</a></li>
-             <li><a href="#Technical Skills">Technical Skills</a></li>
-             <li><a href="#Project">Project</a></li>
-          </ul>
-       </nav>
+    <!--Header Section Design-->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-    <section class="Details" id="Details">
-        <h1 class="heading"><span>Details about me</span></h1>
-        <div class="Row">
-        <div class="det">
-             <h3><span>Name: </span>Zabi-Ur-Rehman</h3>
-             <h3><span>Age: </span>22</h3>
-             <h3><span>Gender: </span>Male</h3>
-             <h3><span>Email: </span>zabiurrehmanis@gmail.com</h3>
-             <h3><span>Mobile_no: </span>8310826166</h3>    
-        </div>
-    </div>
-    </section>
-<section class="Education" id="Education">
-    <h1 class="title"><span>Education</span></h1><br><br><br>
-    <table>
-        <tr>
-            <th>Course</th>
-            <th>Name of the institute</th>
-            <th>University</th>
-            <th>Percentage or CGPA</th>
-        </tr>
-        <tr>
-            <td>BCA</td>
-            <td>Bits Hi-Tech College</td>
-            <td>Davangere University</td>
-            <td>8.25</td>
-        </tr>
-        <tr>
-            <td>Class 12th / 2nd PUC</td>
-            <td>Sai Sanjeeva Indp PU College</td>
-            <td>Department of Pre-University</td>
-            <td>78.33</td>
-        </tr>
-        <tr>
-            <td>Class 10th / SSLC</td>
-            <td>Jnana Vikasa High School</td>
-            <td>KSEEB</td>
-            <td>82.72</td>
-        </tr>
-    </table>
-</section>
-<br><br><br><br><br><br>
-<section class="Technical Skills" id="Technical Skills">
-    <h1 class="head"><span>Technical Skills</span></h1>
-    <div>
-    <ul id="lis">
-        <li>Java</li>
-        <li>C++</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>MySQL</li>
-        <li>Data Structures</li>
-    </ul>
-</div>
-</section>
-<section class="Project" id="Project">
-    <h1 class="heading"><span>Project</span></h1>
-    <div class="Row">
-        <div class="det">
-    <h3><span>Role: </span>Team member</h3>
-    <h3><span>Title: </span>Online Car Rental System</h3>
-    <h3><span>Description: </span>The objective of the online car rental system is to computerize the car renting and also to manage all bookings via online, so the customers can rent the desired luxury cars by paying required amount. It aims to enhance searching speed for all information such as client and rental. It also aims to provide direct access to clients through web application system
-</h3>
+
+    <!--Home Section Design-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>Zabi Ur Rehman</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quis est adipisci veritatis! Quae quaerat </p>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/zabirehman/"><i class="fa-brands fa-linkedin-in"></i></i></a>
             </div>
-</div>
-</section>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+
+        <!-- <div class="home-img">
+            <img src="images/profileimg.jpg" alt="">
+        </div> -->
+    </section>
+
+    <!--About Section-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/profileimg.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo perspiciatis aspernatur odit fugit natus. Dolorum voluptates cum aut, quis doloribus quibusdam enim atque explicabo at tenetur ipsa alias, nam veritatis.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!--Services Section Design-->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam rerum facilis debitis maiores mollitia eligendi ullam sit itaque pariatur ut.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-brands fa-java"></i>
+                <h3>Java</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam rerum facilis debitis maiores mollitia eligendi ullam sit itaque pariatur ut.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-brands fa-linux"></i>
+                <h3>LINUX</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam rerum facilis debitis maiores mollitia eligendi ullam sit itaque pariatur ut.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+     <!--Portfolio Section Design-->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/img1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque?</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/img2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque?</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/img1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque?</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section Design-->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+        <!--Footer Section Design-->
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 by Zabi Ur Rehman | All Rights Reserved</p>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+            </div>
+        </footer>
+         <!--Scroll Reveal JS-->
+         <script src="https://unpkg.com/scrollreveal"></script>
+     <!--Typed JS-->
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <!--Main JS-->
+    <script src="script.js"></script>
 </body>
 </html>
